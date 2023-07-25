@@ -366,7 +366,7 @@ class EnzoHierarchy(GridIndex):
                 g = gs[0]
                 handle = h5py.File(g.filename, "r")
                 grid_group = handle[f"/Grid{g.id:08d}"]
-                for pname in ["Active Particles", "Particles"]:
+                for pname in ["ActiveParticles", "Particles"]:
                     if pname in grid_group:
                         break
                 else:
